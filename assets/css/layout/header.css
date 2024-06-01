@@ -1,0 +1,186 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--cor1);
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.header.hidden {
+    top: -100px; /* Ajuste conforme necessário */
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+
+}
+.user-img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+
+    z-index: 1;
+    background: var(--cor1);
+}
+.nav-item {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+.nav-item.active {
+    position: relative;
+}
+.nav-item.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background: var(--cor2);
+    animation: active-activated 0.4s forwards;
+}
+@keyframes active-activated {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.nav-link {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    width: 32px;
+    height: 32px;
+
+    display: none;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.menu span {
+    width: 100%;
+    height: 2px;
+
+    margin: 3px 0px;
+
+    background: var(--cor2);
+
+    transition: all 0.4s;
+
+}
+.menu.active span:nth-child(1) {
+
+
+    transform: rotate(45deg) translateY(12px);
+}
+.menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu.active span:nth-child(3) {
+
+
+    transform: rotate(-45deg) translateY(-11px);
+
+}
+.user-box {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn-login {
+    cursor: pointer;
+
+    width: 50px;
+    height: 50px;
+
+    background: transparent;
+
+    border: none;
+
+    position: relative;
+}
+
+.btn-login img {
+    height: 100%;
+}
+
+
+@media screen and (max-width: 766px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+    }
+    .nav-list {
+        display: none;
+
+        border-bottom: 1px solid var(--cor2);
+        margin-top: 10px;
+
+        z-index: 2;
+        transition: all 0.4s;
+    }
+    .nav-list.active {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        left: 50%;
+        
+        transform: translateX(-50%);
+        margin-top: 20px;
+
+    }
+    .nav-item {
+        margin: 0;
+
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+        border-bottom: 1px solid var(--cor2);
+    }
+
+
+    .nav-item.active::after {
+        display: none;
+    }  
+}

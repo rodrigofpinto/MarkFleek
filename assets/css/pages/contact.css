@@ -1,0 +1,149 @@
+.main-contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+
+    margin-top: 10vh;
+    
+    font-family: var(--font1);
+}
+
+.container-contact {
+    padding: 40px;
+    margin: auto;
+    width: 60%;
+    min-width: 400px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+.video-contact {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+
+    object-fit: cover;
+}
+.container-contact::after {
+    content: "";
+    z-index: 0;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #00000089;
+
+}
+.tittle-contact {
+    z-index: 1;
+    color: var(--cor1);
+
+    transform: translateY(-20px);
+}
+
+.form-contact {
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-box-contact-name-tel {
+    width: 100%;
+    height: 40px; /* Altura fixa para o layout grid */
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 20px;
+}
+
+.input-box-contact-name-tel input {
+    padding: 10px;
+    border: 1px solid var(--cor2);
+}
+
+.input-box-contact {
+    width: 100%;
+    height: 40px;
+}
+
+.input-box-contact input {
+    padding: 10px;
+    border: 1px solid var(--cor2);
+    width: 100%;
+}
+
+.input-comment {
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.btn-submit-contact {
+    cursor: pointer;
+
+    margin-top: auto;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+
+    color: #fff;
+    background: var(--back-button);
+
+    transition: all 0.2s;
+
+}
+.btn-submit-contact:hover {
+    background: var(--back-button-hover);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .container-contact {
+        height: 80%;
+        gap: 0px;
+
+        background: url(../../images/mobile-contact.png) no-repeat;
+        background-size: cover;
+        background-position: top center;
+        
+    }
+
+    .input-box-contact-name-tel {
+        display: flex;
+        flex-direction: column;
+        height: auto; /* Ajuste a altura para o layout vertical */
+    }
+
+    .input-box-contact-name-tel input {
+        height: 40px; /* Define a altura dos inputs individualmente */
+        margin-bottom: 10px; /* Espaçamento entre os inputs */
+    }
+    .input-comment {
+        height: 70px;
+    }
+    .video-contact {
+        display: none;
+    }
+}

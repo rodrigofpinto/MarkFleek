@@ -1,0 +1,36 @@
+{
+    "help": {
+        "title": "Ajuda",
+        "links": [
+            { "href": "#", "text": "Perguntas frequentes" },
+            { "href": "#", "text": "Carão oferta" },
+            { "href": "#", "text": "Politicas de devolução" },
+            { "href": "#", "text": "Politica de envio" },
+            { "href": "#", "text": "Termos de Serviço" },
+            { "href": "#", "text": "Politica de privacidade" }
+        ]
+    },
+    "paymentMethods": {
+        "title": "Formas de pagamento",
+        "images": [
+            { "src": "../assets/images/AMEX.svg", "alt": "American Express" },
+            { "src": "../assets/images/ApplePay.svg", "alt": "Apple Pay" },
+            { "src": "../assets/images/GooglePay.svg", "alt": "Google Pay" },
+            { "src": "../assets/images/MasterCard.svg", "alt": "MasterCard" },
+            { "src": "../assets/images/MultiBanco_VISA.svg", "alt": "MultiBanco VISA" },
+            { "src": "../assets/images/PayPal.svg", "alt": "PayPal" },
+            { "src": "../assets/images/VISA.svg", "alt": "VISA" }
+        ]
+    },
+    "socialFollow": {
+        "title": "Segue-nos!",
+        "images": [
+            { "src": "../assets/images/facebook.png", "alt": "Facebook" },
+            { "src": "../assets/images/instagram.png", "alt": "Instagram" },
+            { "src": "../assets/images/pinterest.png", "alt": "Pinterest" },
+            { "src": "../assets/images/tiktok.png", "alt": "TikTok" },
+            { "src": "../assets/images/twitterv2.png", "alt": "Twitter" },
+            { "src": "../assets/images/youtube.png", "alt": "YouTube" }
+        ]
+    }
+}

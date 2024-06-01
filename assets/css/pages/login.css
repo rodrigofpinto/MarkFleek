@@ -1,0 +1,339 @@
+main {
+    opacity: 0;
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: initializing 3s forwards;
+
+    position: relative;
+
+    margin-top: 10vh;
+
+}
+
+@keyframes initializing {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+aside {
+    width: 20%;
+    height: 80%;
+
+    border: 1px solid var(--cor2);
+    border-radius: 10px 0px 0px 10px;
+
+    overflow: hidden;
+}
+aside video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: top;
+}
+section {
+    width: 500px;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--cor2);
+    border-radius: 0px 10px 10px 0px;   
+}
+
+
+.signup-section .content{
+    height: 20%;
+}
+.signup-section form {
+    height: 80%;
+}
+.signup-section .content h1 {
+    font-size: 18px;
+}
+.signup-section .content p {
+    font-size: 16px;
+    text-align: center;
+
+    padding: 1% 0px;
+}
+.login-section, .signup-section {
+    display: none;
+}
+
+.login-section.active, .signup-section.active {
+    display: flex;
+}
+.signup-section .content::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+
+    width: 100%;
+    height: 1px;
+    background: var(--cor2);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+}
+
+.content {
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.content::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: +10px;
+
+    width: 100%;
+    height: 1px;
+    background: var(--cor2);
+}
+.content p {
+    text-align: center;
+
+    padding: 20px 0px;
+}
+
+form {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.area-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.box-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-label {
+    width: 60px;
+
+    padding: 10px;
+}
+
+input {
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+
+    border: none;
+    border-bottom: 1px solid var(--cor2);
+
+    margin: 10px 0px;
+
+    color: var(--cor2);
+    background: transparent;
+
+    position: relative;
+}
+input:focus {
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+
+.signup-section.active .btn-login-form {
+    margin-top: 0px;
+}
+.btn-login-form {
+    cursor: pointer;
+
+    color: #fff;
+    background: var(--back-button);
+
+    margin-top: 10px;
+    border: 1px solid var(--cor2);
+    border-radius: 4px;
+
+
+    width: 70%;
+    height: 40px;
+    
+    transition: all 0.3s;
+} 
+.btn-login-form:hover {
+    color: var(--cor1);
+    background: var(--cor2);
+}
+
+.p-registar {
+    margin-top: 20px;
+}
+.btn-signup-form {
+    cursor: pointer;
+
+    color: var(--cor2);
+    background: var(--cor1);
+
+    border: 1px solid var(--cor2);
+    border-radius: 4px;
+
+
+    width: 70%;
+    height: 40px;
+
+    transition: all 0.3S;
+}
+.btn-signup-form:hover {
+    background: #0000003f;
+}
+@media screen and (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+    .login-section {
+        height: 80%;
+        width: 70%;
+
+
+        padding: 0px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .signup-section {
+        height: 85%;
+        width: 75%;
+
+
+        padding: 0px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .login-section .content{
+        height: 40%;
+    }
+    .login-section form {
+        height: 60%;
+    }
+
+    .signup-section .content{
+        height: 30%;
+    }
+    .signup-section form {
+        height: 70%;
+    }
+    .container {
+        padding: 0px 0px 10px 0px;
+    }
+    .content {
+        padding: 1px;
+        width: 100%;
+
+        background: url(../../images/img-mobile-login.png) no-repeat;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+
+        z-index: 0;
+    }
+    .content h1, .content p, .content strong {
+        color: #fff;
+
+        z-index: 1;
+    }
+    .content::after {    
+        content: "";
+        
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: #00000086;
+
+        z-index: -1;
+
+    }
+    .form {
+        height: 70%;
+    }
+    input {
+        width: 80%;
+
+        padding: 0px;
+
+        margin: 10px 5px;
+    }
+}
+
+#login-success {
+    position: absolute;
+
+    top: 10vh;
+    right: 0;
+
+    width: 200px;
+    height: 60px;
+
+
+    overflow: hidden;
+
+}
+.login-sucess-notfication {
+    width: 200px;
+    height: 60px;
+
+    padding: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    border: 1px solid var(--cor2);
+    border-radius: 4px;
+
+
+    background: var(--cor1);
+
+    transform: translateX(100%);
+
+    transition: all 0.4s;
+}
+.login-sucess-notfication.active{
+    transform: translateX(0px);
+}

@@ -1,0 +1,35 @@
+{
+    "logo": {
+        "href": "../pages/allproducts.html",
+        "src": "../assets/images/mark_fleek_black_transparent.png",
+        "alt": "MARK FLEEK"
+    },
+    "navItems": [
+        {
+            "href": "../../index.html",
+            "text": "HOME",
+            "active": false
+        },
+        {
+            "href": "../pages/allproducts.html",
+            "text": "ALL PRODUCTS",
+            "active": false
+        },
+        {
+            "href": "../pages/about.html",
+            "text": "ABOUT US",
+            "active": false
+        },
+        {
+            "href": "../pages/contact.html",
+            "text": "CONTACT",
+            "active": false
+        }
+    ],
+    "user": {
+        "name": "User",
+        "loginHref": "../pages/login.html",
+        "imgSrc": "../assets/images/icons-user.png",
+        "imgAlt": ""
+    }
+}

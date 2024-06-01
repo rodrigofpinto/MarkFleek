@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Camisa manga curta rendilhado",
+      "image": "https://static.pullandbear.net/2/photos//2024/I/0/2/p/3470/577/251/3470577251_2_1_0.jpg?ts=1716219902081&imwidth=850",
+      "price": "29,99",
+      "type": "",
+      "link": ""
+    },
+      {
+      "name": "Polo manga curta malha",
+      "image": "https://static.pullandbear.net/2/photos//2024/I/0/2/p/3555/904/818/3555904818_2_1_0.jpg?ts=1716219902132&imwidth=850",
+      "price": "27,99",
+      "type": "",
+      "link": "https://github.com/rodrigofpinto/projeto-mario"
+    },
+      {
+      "name": "Top de crochet com estampado floral",
+      "image": "https://static.pullandbear.net/2/photos//2024/I/0/1/p/7248/364/711/7248364711_2_1_0.jpg?ts=1716971973962&imwidth=850",
+      "price": "39.99",
+      "type": "",
+      "link": "https://github.com/rodrigofpinto/projeto-coca-cola"
+    },
+    {
+      "name": "Top bandeau de crochet",
+      "image": "https://static.pullandbear.net/2/photos//2024/I/0/1/p/7554/336/513/7554336513_2_1_0.jpg?ts=1716972169571&imwidth=850",
+      "price": "17.99",
+      "type": "",
+      "link": "https://github.com/rodrigofpinto/projeto-login"
+    },
+    {
+      "name": "SOUD FACE",
+      "image": "assets/login_asseto_img.jpeg",
+      "price": "39.99",
+      "type": "",
+      "link": "https://github.com/rodrigofpinto/projeto-login"
+    },
+    {
+      "name": "SUPER PRIME",
+      "image": "assets/login_asseto_img.jpeg",
+      "price": "39.99",
+      "type": "",
+      "link": "https://github.com/rodrigofpinto/projeto-login"
+    },
+    {
+      "name": "HUGO LOSER",
+      "image": "assets/login_asseto_img.jpeg",
+      "price": "39.99",
+      "type": "",
+      "link": "https://github.com/rodrigofpinto/projeto-login"
+    }
+]

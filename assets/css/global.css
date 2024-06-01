@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url(layout/header.css);
+@import url(layout/footer.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    color: var(--cor2);
+
+
+}
+
+:root {
+    --cor1: #fff;
+    --cor2: #222222;
+
+    --beje1: #fbfbed9f;
+    --beje: #eaeab462;
+
+    --back-button: rgba(0, 0, 0, 0.871);
+    --back-button-hover: rgba(0, 0, 0, 0.925);
+
+    --font1: "Roboto", sans-serif;
+}
+
+body {
+    background: var(--cor1);
+    position: relative;
+}
+
+strong {
+    color: var(--cor2);
+    font-size: 19px;
+}
+
+
+
+
+.CookieMessage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #121212;;
+    z-index: 999;
+    display: none;
+    color: var(--cor1);
+}
+
+.CookieMessage-content {
+color: var(--cor1);
+max-width: 900px;
+margin: 0 auto;
+padding: 20px 20px 0 20px;
+font-family: sans-serif;
+line-height: 1.5;
+font-size: 12px;
+}
+.CookieMessage-content a{
+    color: var(--cor2);
+}
+
+.CookieMessage-content p{
+    color: var(--cor1);
+margin: 0 0 20px 0;
+}
+
+.CookieMessage-button {
+background: var(--cor1);
+display: inline-block;
+text-decoration: none;
+padding: 5px 20px;
+border-radius: 5px;
+text-transform: uppercase;
+
+}
+.CookieMessage-button:hover{
+background: var(--cor1);
+}
+#colorToggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+
+    position: fixed;
+    right: 0;
+    bottom:  0;
+
+    margin: 10px;
+    color: var(--cor1);
+    background: var(--cor2);
+
+    border: none;
+    border-radius: 50%;
+
+    transition: all 0.4s;
+}
+
+

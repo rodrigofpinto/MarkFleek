@@ -1,0 +1,40 @@
+.product-item:hover  .product-name::after{
+    display: flex;
+}
+
+.product-picture {
+    width: 100%;
+    height: 80%;
+
+    background: red;
+}
+
+
+.product-name {
+    width: fit-content;
+    color: var(--cor1);
+
+    font-size: 26px;
+
+    position: relative;
+}
+.product-name::after {
+    display: none;
+    content: "";
+
+    width: 100%;
+    height: 2px;
+
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    background: var(--cor1);
+}
+.product-price {
+    color: var(--cor1);
+    font-size: 16px;
+}
+.product-price::before {
+    content: "€";
+}

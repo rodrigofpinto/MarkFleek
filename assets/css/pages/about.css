@@ -1,0 +1,265 @@
+/* MAIN */
+
+main {
+    opacity: 0;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: initializing 3s forwards;
+
+    margin-top: 10vh;
+}
+@keyframes initializing {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* TEXTO LEFT */
+.information {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION TEXTO */
+.section_left {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+.section_left::after {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000db;
+    width: 100%;
+    height: 100%;
+}
+
+/* VIDEO */
+.video-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* TEXTO */
+.about-content {
+    z-index: 1;
+
+    width: 80%;
+    height: 55%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 10%;
+
+    font-family: var(--font1);
+}
+
+.about-tittle {
+    color: rgb(106, 106, 106);
+    font-size: 14px;
+    letter-spacing: 3px;
+
+    transform: translateX(-120vw);
+    
+    animation: about-content-enter 2s forwards ease-in-out;
+}
+
+.about-tittle2 {
+    width: 90%;
+
+    color: #c8c8c8;
+    font-size: 44px;
+
+    transform: translateX(-120vw);
+
+    animation: about-content-enter 2s 0.5s forwards ease-in-out;
+}
+
+.about-paragraph {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+
+    margin-top: auto;
+
+    transform: translateX(-120vw);
+
+    animation: about-content-enter 2s 1s forwards ease-in-out;
+}
+
+@keyframes about-content-enter {
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* LOGO */
+.section_right {
+    display: flex;
+    width: 40%;
+    height: 100%;
+}
+
+.section_right img {
+    margin: auto;
+    width: 70%;
+
+}
+
+.boxs-informations {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+    background: var(--cor1);
+}
+.information-box {
+    width: 320px;
+    height: 500px;
+    
+    border: 1px solid var(--cor2);
+    border-radius: 10px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    font-family: var(--font1);
+    background-size: cover;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.information-box::after {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #000000db;
+}
+.information-box-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.information-box-tittle {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 3px;
+    z-index: 2;
+    text-align: center;
+
+    margin: 40px 0px;
+}
+.information-box-paragraph {
+    color: #fff;
+    z-index: 2;
+    text-align: justify;
+
+    margin: 50px 0px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+    .information {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section_left {
+        width: 100%;
+        height: 90vh;
+
+        padding: 0 10px;
+    }
+
+    .section_right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .about-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        text-align: center;
+    }
+
+    .about-tittle, .about-tittle2, .about-paragraph {
+        text-align: center;
+
+        margin: 30px;
+    }
+    .boxs-informations {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        justify-content: center;
+    
+        gap: 30px;
+
+        padding: 30px;
+    }
+    .information-box-background {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-tittle2 {
+        font-size: 40px;
+    }
+}
