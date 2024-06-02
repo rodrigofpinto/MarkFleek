@@ -12,7 +12,7 @@
     padding: 40px;
     margin: auto;
     width: 60%;
-    min-width: 300px;
+
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -24,6 +24,8 @@
 
     position: relative;
 }
+
+
 .video-contact {
     z-index: -1;
     position: absolute;
@@ -145,5 +147,10 @@
     }
     .video-contact {
         display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-contact {
+        width: 90%;
     }
 }

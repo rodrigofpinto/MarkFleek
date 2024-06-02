@@ -338,7 +338,7 @@ input:focus {
     transform: translateX(0px);
 }
 @media screen and (max-width: 768px) {
-    .login-section {
+    .login-section, .signup-section {
         width: 90%;
     }
 }
