@@ -82,12 +82,13 @@
     .footer {
         height: fit-content;
         display: flex;
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         gap: 32px;
-        padding: 20px 0px 60px 0px;
+        padding: 20px 5px 60px 5px;
     }
     .first-column-footer {
         text-align: center;
@@ -95,6 +96,7 @@
     .list-footer {
         width: 100%;
         justify-content: center;
+        
         flex-direction: row;
         flex-wrap: wrap;
     }
