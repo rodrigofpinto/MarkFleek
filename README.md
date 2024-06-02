@@ -8,11 +8,13 @@
 
 ## 💻 Projeto
 
-Projeto **Mark Fleek** em  _HTML_,  _CSS_ e _JavaScript_.
+Projeto **Mark Fleek**, uma loja de roupa de alto nivel.
 
 ## 🚀 Tecnologias
 
 - HTML
 - CSS
 - JavaScript
+- Json
+- PHP
 
