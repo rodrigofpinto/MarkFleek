@@ -337,3 +337,9 @@ input:focus {
 .login-sucess-notfication.active{
     transform: translateX(0px);
 }
+@media screen and (max-width: 768px) {
+    .login-section {
+        width: 90%;
+    }
+}
+
