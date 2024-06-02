@@ -1,2 +1,20 @@
-# MarkFleek
- Mark Fleek Store
+<h1 align="center">
+  Mark Fleek
+</h1>
+
+<p align="center">
+  <img src=".github/preview.png" width="100%" />
+</p>
+
+## 💻 Projeto
+
+Projeto **Mark Fleek**, uma loja de roupa de alto nivel.
+
+## 🚀 Tecnologias
+
+- HTML
+- CSS
+- JavaScript
+- Json
+- PHP
+
