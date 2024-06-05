@@ -2,18 +2,6 @@
 
 @import url(layout/header.css);
 @import url(layout/footer.css);
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-    text-decoration: none;
-
-    color: var(--cor2);
-
-
-}
-
 :root {
     --cor1: #fff;
     --cor2: #222222;
@@ -25,8 +13,23 @@
     --back-button-hover: rgba(0, 0, 0, 0.925);
 
     --font1: "Roboto", sans-serif;
-    --font_menu: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+    --font_geral: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    color: var(--cor2);
+    font-family: var(--font_geral);
+
+
+
+}
+
 
 body {
     background: var(--cor1);
